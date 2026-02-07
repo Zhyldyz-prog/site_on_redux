@@ -1,0 +1,15 @@
+body.Light{
+    background-color: #ffffff;
+    color: black;
+}
+
+body.dark{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}

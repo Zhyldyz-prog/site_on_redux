@@ -1,30 +1,25 @@
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import "../styles/home.css";
 
 const Home = () => {
-    const theme = useSelector(state => state.ui.theme);
-    const posts = useSelector(state => state.ui.posts); 
+  const theme = useSelector(state => state.ui.theme);
 
-    return (
-        <main style={{
-            padding: "40px",
-            minHeight: "60vh",
-            background: theme === "light" ? "#fff" : "#222",
-            color: theme === 'light' ? "#000" : "#fff"
-        }}>
-            <h2>Главная страница</h2>
-            <p>Добро пожаловать на сайт REDUX!</p>
-            
-            <h3>Последние посты (данные из Redux):</h3>
-            <ul>
-                {posts.map(post => (
-                    <li key={post.id} style={{ marginBottom: "20px" }}>
-                        <h4>{post.title}</h4>
-                        <p>{post.content}</p>
-                    </li>
-                ))}
-            </ul>
-        </main>
-    );
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  return (
+    <main className="home container">
+      <h1>Welcome to SmartClinic</h1>
+      <p>Your trusted premium healthcare platform.</p>
+
+      <div className="home-buttons">
+        <button className="primary-btn">Book Appointment</button>
+        <button className="secondary-btn">View Doctors</button>
+      </div>
+    </main>
+  );
 };
 
 export default Home;
