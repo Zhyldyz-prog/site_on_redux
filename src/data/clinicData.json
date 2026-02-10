@@ -1,0 +1,39 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "specialty": "Cardiologist",
+      "experience": 10,
+      "description": "Expert in heart diseases and preventive care."
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Lee",
+      "specialty": "Dermatologist",
+      "experience": 7,
+      "description": "Specialist in skin treatments and cosmetic dermatology."
+    },
+    {
+      "id": 3,
+      "name": "Dr. Anna Brown",
+      "specialty": "Pediatrician",
+      "experience": 12,
+      "description": "Child healthcare expert."
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "General Consultation"
+    },
+    {
+      "id": 2,
+      "title": "Heart Checkup"
+    },
+    {
+      "id": 3,
+      "title": "Skin Treatment"
+    }
+  ]
+}
