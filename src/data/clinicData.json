@@ -35,5 +35,29 @@
       "id": 3,
       "title": "Skin Treatment"
     }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientName": "John Doe",
+      "doctorId": 1,
+      "doctorName": "Dr. Sarah Johnson",
+      "date": "2026-03-15",
+      "time": "10:00",
+      "status": "scheduled",
+      "reason": "Regular checkup"
+    },
+    {
+      "id": 2,
+      "patientName": "Jane Smith",
+      "doctorId": 2,
+      "doctorName": "Dr. Michael Lee",
+      "date": "2026-03-16",
+      "time": "14:30",
+      "status": "scheduled",
+      "reason": "Skin consultation"
+    }
   ]
+
+  
 }
